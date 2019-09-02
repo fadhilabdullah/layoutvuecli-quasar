@@ -1,6 +1,6 @@
 <template>
   <q-page-container>
-    <div class="q-pa-md q-gutter-sm">
+    <div class="q-pa-md q-gutter-md">
       <q-btn label="Creat Employee" color="primary" @click="prompt = true" />
 
       <q-dialog v-model="prompt" persistent>
@@ -10,11 +10,11 @@
           </q-card-section>
 
           <q-card-section>
-            <q-input dense v-model="name" label="Name" autofocus @keyup.enter="prompt = false" />
+            <q-input dense v-model="text" label="Name" autofocus @keyup.enter="prompt = false" />
           </q-card-section>
 
           <q-card-section>
-            <q-input dense v-model="address" label="Address" autogrow @keyup.enter="prompt = false" />
+            <q-input dense v-model="text" label="Address" autogrow @keyup.enter="prompt = false" />
           </q-card-section>
 
           <q-card-section class="q-pa-md">
@@ -30,7 +30,7 @@
           </q-card-section>
 
           <q-card-section>
-            <q-input dense v-model="telephone" label="Telephone" autofocus @keyup.enter="prompt = false"
+            <q-input dense v-model.number="model" type="number" label="Telephone" autofocus @keyup.enter="prompt = false"
               mask="############" />
           </q-card-section>
 

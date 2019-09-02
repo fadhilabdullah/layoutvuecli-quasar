@@ -21,15 +21,21 @@ import {
   QItemSection,
   QItemLabel,
   QDialog,
+  Dialog,
   QCard,
+  QCardSection,
+  QCardActions,
   QInput,
   QDate,
   QPopupProxy,
   ClosePopup,
+  QScrollArea,
   QTable,
   QTh,
   QTr,
-  QTd
+  QTd,
+  QSeparator,
+  QSelect
 } from 'quasar'
 
 Vue.use(Quasar, {
@@ -50,17 +56,23 @@ Vue.use(Quasar, {
     QItemLabel,
     QDialog,
     QCard,
+    QCardSection,
+    QCardActions,
     QInput,
     QDate,
     QPopupProxy,
+    QScrollArea,
     QTable,
     QTh,
     QTr,
-    QTd
+    QTd,
+    QSeparator,
+    QSelect
   },
   directives: {
     ClosePopup
   },
   plugins: {
+    Dialog
   }
 })
